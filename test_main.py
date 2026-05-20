@@ -1,10 +1,4 @@
-from main import add
+from main import multiply
 
-def test_add():
-    assert add(1, 2) == 3
-
-def test_add_negative():
-    assert add(-1, -2) == -3
-
-def test_add_zero():
-    assert add(0, 0) == 0
+def test_multiply():
+    assert multiply(3, 4) == 12 
