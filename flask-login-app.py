@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, session, redirect, url_for
 import re
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-123'
+app.secret_key = '222222222222222223333333333333333123123'
 
 # Dữ liệu user cứng
 USERS = {
@@ -165,8 +165,8 @@ def login():
     </body>
     </html>
     '''
-
-@app.route('/dashboard')
+    
+@app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
     """Trang dashboard sau login"""
     if 'user' not in session:
